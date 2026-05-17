@@ -41,7 +41,6 @@ public class PastelItemTags {
     public static final TagKey<Item> TEA_TABLE_DRINKS = of("tea_table_drinks");
     public static final TagKey<Item> METAL_ARMOR = of("metal_armor");
 
-    public static final TagKey<Item> PIGMENTS = of("pigments");
     public static final TagKey<Item> PRODUCTIVITY_EXCLUDED = of("productivity_excluded");
 
     public static class EnchantableWith{
