@@ -1,3 +1,4 @@
+import arrow.core.compareTo
 import groovy.json.StringEscapeUtils
 
 plugins {
@@ -149,7 +150,7 @@ cloche {
 
                 modCompileOnly(module(group = "me.shedaniel", name = "RoughlyEnoughItems-neoforge", version = "16.0.788"))
 
-                modImplementation("com.cmdpro.databank:databank:1.3.1") {
+                modImplementation("maven.modrinth:databank:1.3.1") {
                     exclude(module = "sodium")
                     exclude(module = "iris")
                 }
@@ -246,6 +247,9 @@ publishing {
 	}
 }
 
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+}
 
 resourcefulGradle {
 	templates {
